@@ -1,0 +1,24 @@
+.beers-grid-container {
+  text-align: left;
+
+  div {
+    // there is a small bug with the paginate so we need this dude
+    .pagination-info {
+      margin: 20px 0 0 0;
+      color: #777777;
+    }
+    .pagination {
+      margin: 0;
+    }
+    .total-count-info {
+      color: #777777;
+    }
+  }
+  // because of that same issue with react-navigate
+  div:nth-child(4) > ul > li.previous {
+    display: none;
+  }
+  div:nth-child(4) > ul > li.next {
+    display: none;
+  }
+}
